@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Pricing Plan Table</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header header__hero">
+            <section class="navigation">
+                <div class="navigation__brand">
+                    <img class="logo-image" src="./images/Logo.svg" alt="App Logo">
+                    <span class="logo-text">My Plus</span>
+                </div>
+                <nav class="navigation__menu">
+                    <ul>
+                        <li>Tools</li>
+                        <li>Company</li>
+                        <li>About Us</li>
+                        <li>Pricing</li>
+                        <li>Support</li>
+                    </ul>
+                </nav>
+                <div class="navigation__action">
+                    <button class="button navigation__action__button navigation__action__button--login">Login</button>
+                    <button class="button navigation__action__button navigation__action__button--signup">Sign
+                        up</button>
+                </div>
+            </section>
+            <section class="content">
+                <h1 class="content__heading">Find Your Perfect Plan</h1>
+                <p class="content__headline">Discover the ideal plan to fuel your business growth. Our pricing
+                    options
+                    are carefully crafted to cater to businesses.</p>
+                <section class="switch-tab">
+                    <button class="button button-switch button-switch__monthly button-switch--selected">Monthly</button>
+                    <button class="button button-switch button-switch__yearly">Yearly</button>
+                </section>
+            </section>
+        </header>
+        <main class="main">
+            <section id="section-pricing" class="pricing">
+                <section class="plan">
+                    <section class="card card__pro">
+                        <img src="./images/bullseye-arrow-icon.svg" alt="Pro icon: A bullseye with an arrow">
+                        <h2 class="card__heading">Pro</h2>
+                        <p class="card__description">Unleash the Power of Your Business with Pro Plan.</p>
+                        <div class="card__price">
+                            <div class="card__price__value">$34</div>
+                            <div class="card__price__text">per month</div>
+                        </div>
+                        <hr class="card__line card__line--pro">
+                        <div class="card__attributes">
+                            <ul>
+                                <li>Enhanced Analytics</li>
+                                <li>Custom Domain</li>
+                                <li>E-commerce Integration</li>
+                                <li>Priority Support</li>
+                                <li>Advanced Security</li>
+                            </ul>
+                        </div>
+                        <form action="#">
+                            <button class="button button__action button__action--pro">Get Started</button>
+                        </form>
+                    </section>
+                    <section class="card card__business">
+                        <img src="./images/gem-icon.svg" alt="Business icon: A gem">
+                        <h2 class="card__heading">
+                            Business
+                            <span class="mini-card">Best Offer</span>
+                        </h2>
+                        <p class="card__description card__description--business">Take Your Business to the Next Level
+                            with Business Plan.</p>
+                        <div class="card__price">
+                            <div class="card__price__value">$56</div>
+                            <div class="card__price__text card__price__text--business">per month</div>
+                        </div>
+                        <hr class="card__line card__line--business">
+                        <div class="card__attributes">
+                            <ul>
+                                <li>Advanced Marketing Tools</li>
+                                <li>Customizable Templates</li>
+                                <li>Multi-user Access</li>
+                                <li>Third-party Integrations</li>
+                                <li>24/7 Priority Support</li>
+                            </ul>
+                        </div>
+                        <form action="#">
+                            <button class="button button__action button__action--business">Get Started</button>
+                        </form>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="/src/js/index.js"></script>
+</body>
+
+</html>
