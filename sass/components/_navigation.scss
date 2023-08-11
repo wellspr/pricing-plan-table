@@ -1,0 +1,70 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4rem;
+
+    height: 10rem;
+
+    &__brand {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        .logo-img {
+            width: 4.4rem;
+            height: 4.4rem;
+        }
+
+        .logo-text {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 4.4rem;
+
+            li {
+                font-size: 1.8rem;
+                font-weight: $fw-medium;
+
+                a {
+                    text-decoration: none;
+                    color: $color-dark;
+                }
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+        gap: 1.6rem;
+
+        &__button {
+            font-size: 1.8rem;
+            font-weight: $fw-medium;
+
+            padding: 0 2.8rem;
+            border-radius: 1.2rem;
+
+            height: 4.8rem;
+
+            cursor: pointer;
+
+            &--login {
+                background-color: transparent;
+                color: $color-dark;
+
+                border: 0.1rem solid $color-dark;
+            }
+
+            &--signup {
+                background-color: $color-dark;
+                color: $color-white;
+            }
+        }
+    }
+}

@@ -28,42 +28,44 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
 }
-.header .navigation {
+
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 4rem;
   height: 10rem;
 }
-.header .navigation__brand {
+.navigation__brand {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
-.header .navigation__brand .logo-img {
+.navigation__brand .logo-img {
   width: 4.4rem;
   height: 4.4rem;
 }
-.header .navigation__brand .logo-text {
+.navigation__brand .logo-text {
   font-size: 2.4rem;
 }
-.header .navigation__menu {
-  color: #1b223c;
-}
-.header .navigation__menu ul {
+.navigation__menu ul {
   display: flex;
   list-style: none;
   gap: 4.4rem;
 }
-.header .navigation__menu ul li {
+.navigation__menu ul li {
   font-size: 1.8rem;
   font-weight: 500;
 }
-.header .navigation__action {
+.navigation__menu ul li a {
+  text-decoration: none;
+  color: #1b223c;
+}
+.navigation__action {
   display: flex;
   gap: 1.6rem;
 }
-.header .navigation__action__button {
+.navigation__action__button {
   font-size: 1.8rem;
   font-weight: 500;
   padding: 0 2.8rem;
@@ -71,16 +73,17 @@ body {
   height: 4.8rem;
   cursor: pointer;
 }
-.header .navigation__action__button--login {
+.navigation__action__button--login {
   background-color: transparent;
   color: #1b223c;
   border: 0.1rem solid #1b223c;
 }
-.header .navigation__action__button--signup {
+.navigation__action__button--signup {
   background-color: #1b223c;
   color: #ffffff;
 }
-.header .content {
+
+.content {
   margin-top: 7.8rem;
   padding-bottom: 6rem;
   display: flex;
@@ -88,12 +91,12 @@ body {
   align-items: center;
   margin-bottom: 2rem;
 }
-.header .content__heading {
+.content__heading {
   font-size: 6.4rem;
   font-weight: 400;
   color: #000000;
 }
-.header .content__headline {
+.content__headline {
   margin-top: 1.4rem;
   font-size: 2.4rem;
   font-weight: 300;
@@ -101,10 +104,10 @@ body {
   text-align: center;
   color: #797878;
 }
-.header .content .switch-tab {
+.content .switch-tab {
   margin-top: 2.8rem;
-  background-color: #FBFBFB;
-  border: 0.1rem solid #E7EBFF;
+  background-color: #fbfbfb;
+  border: 0.1rem solid #e7ebff;
   border-radius: 1.4rem;
   height: 6.4rem;
   width: 25.6rem;
@@ -112,32 +115,32 @@ body {
   justify-content: space-around;
   padding: 0.8rem;
 }
-.header .content .switch-tab .button-switch {
+.content .switch-tab .button-switch {
   width: 12rem;
   font-size: 2.4rem;
   color: #797878;
   cursor: pointer;
 }
-.header .content .switch-tab .button-switch--selected {
+.content .switch-tab .button-switch--selected {
   background-color: #ffffff;
   color: #1b223c;
-  border: 0.1rem solid #E7EBFF;
+  border: 0.1rem solid #e7ebff;
   border-radius: 1.2rem;
 }
 
-.main .pricing .plan {
+.pricing .plan {
   display: flex;
   justify-content: center;
   gap: 4rem;
 }
-.main .pricing .plan .card {
+.pricing .plan .card {
   padding: 4rem;
-  border: 0.1rem solid #E7EBFF;
+  border: 0.1rem solid #e7ebff;
   border-radius: 2.6rem;
   width: 48.8rem;
-  box-shadow: 0 0.5rem 5rem -0.5rem #E7EBFF;
+  box-shadow: 0 0.5rem 5rem -0.5rem #e7ebff;
 }
-.main .pricing .plan .card__heading {
+.pricing .plan .card__heading {
   margin-top: 2rem;
   margin-bottom: 1.4rem;
   font-size: 4.4rem;
@@ -146,7 +149,7 @@ body {
   align-items: center;
   gap: 1.4rem;
 }
-.main .pricing .plan .card__heading .mini-card {
+.pricing .plan .card__heading .mini-card {
   font-size: 1.8rem;
   color: #ffffff;
   font-weight: 300;
@@ -155,56 +158,56 @@ body {
   padding: 0.5rem 1rem;
   margin-bottom: -0.5rem;
 }
-.main .pricing .plan .card__description {
+.pricing .plan .card__description {
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 3.2rem;
   color: #797878;
 }
-.main .pricing .plan .card__description--business {
-  color: #3C3C3C;
+.pricing .plan .card__description--business {
+  color: #3c3c3c;
 }
-.main .pricing .plan .card__price {
+.pricing .plan .card__price {
   margin-top: 2.4rem;
   display: flex;
   align-items: flex-end;
 }
-.main .pricing .plan .card__price__value {
+.pricing .plan .card__price__value {
   font-size: 6rem;
   font-weight: 500;
 }
-.main .pricing .plan .card__price__text {
+.pricing .plan .card__price__text {
   font-size: 2.4rem;
   font-weight: 300;
   margin-bottom: 1.4rem;
   margin-left: 1rem;
   color: #797878;
 }
-.main .pricing .plan .card__price__text--business {
-  color: #3C3C3C;
+.pricing .plan .card__price__text--business {
+  color: #3c3c3c;
 }
-.main .pricing .plan .card__line {
+.pricing .plan .card__line {
   margin: 2.8rem 0;
-  color: #E7EBFF;
+  color: #e7ebff;
 }
-.main .pricing .plan .card__attributes {
+.pricing .plan .card__attributes {
   margin-bottom: 4.4rem;
 }
-.main .pricing .plan .card__attributes ul {
+.pricing .plan .card__attributes ul {
   list-style: none;
 }
-.main .pricing .plan .card__attributes ul li {
+.pricing .plan .card__attributes ul li {
   font-size: 2.4rem;
   font-weight: 400;
   color: #1b223c;
   margin-bottom: 1.2rem;
   line-height: 4rem;
 }
-.main .pricing .plan .card__attributes ul li::before {
+.pricing .plan .card__attributes ul li::before {
   content: url(images/check.svg);
   padding-right: 1.6rem;
 }
-.main .pricing .plan .card .button__action {
+.pricing .plan .card .button__action {
   border-radius: 1.2rem;
   border: 0.1rem solid #1b223c;
   display: flex;
@@ -214,16 +217,16 @@ body {
   height: 6rem;
   cursor: pointer;
 }
-.main .pricing .plan .card .button__action--pro {
+.pricing .plan .card .button__action--pro {
   font-size: 2.4rem;
   color: #1b223c;
 }
-.main .pricing .plan .card .button__action--business {
+.pricing .plan .card .button__action--business {
   font-size: 2.4rem;
   background-color: #1b223c;
   color: #ffffff;
 }
-.main .pricing .plan .card__business {
+.pricing .plan .card__business {
   background-image: url(images/background-business.svg);
   background-repeat: no-repeat;
   background-position: center;

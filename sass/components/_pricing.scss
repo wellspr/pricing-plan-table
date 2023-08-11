@@ -1,0 +1,130 @@
+.pricing {
+    .plan {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+
+        .card {
+            padding: 4rem;
+            border: 0.1rem solid $color-light;
+            border-radius: 2.6rem;
+            width: 48.8rem;
+
+            box-shadow: 0 0.5rem 5rem -0.5rem $color-light;
+
+            //img {}
+
+            &__heading {
+                margin-top: 2rem;
+                margin-bottom: 1.4rem;
+                font-size: 4.4rem;
+                font-weight: $fw-medium;
+
+                display: flex;
+                align-items: center;
+                gap: 1.4rem;
+
+                .mini-card {
+                    font-size: 1.8rem;
+                    color: $color-white;
+                    font-weight: $fw-light;
+                    border-radius: 0.8rem;
+                    border: 0.1rem solid $color-white;
+                    padding: 0.5rem 1rem;
+                    margin-bottom: -0.5rem;
+                }
+            }
+
+            &__description {
+                font-size: 2.4rem;
+                font-weight: $fw-light;
+                line-height: 3.2rem;
+                color: $color-gray;
+
+                &--business {
+                    color: $color-gray-2;
+                }
+            }
+
+            &__price {
+                margin-top: 2.4rem;
+                display: flex;
+                align-items: flex-end;
+
+                &__value {
+                    font-size: 6rem;
+                    font-weight: $fw-medium;
+                }
+
+                &__text {
+                    font-size: 2.4rem;
+                    font-weight: $fw-light;
+                    margin-bottom: 1.4rem;
+                    margin-left: 1rem;
+                    color: $color-gray;
+
+                    &--business {
+                        color: $color-gray-2;
+                    }
+                }
+            }
+
+            &__line {
+                margin: 2.8rem 0;
+                color: $color-light;
+            }
+
+            &__attributes {
+                ul {
+                    list-style: none;
+
+                    li {
+                        font-size: 2.4rem;
+                        font-weight: $fw-regular;
+                        color: $color-dark;
+                        margin-bottom: 1.2rem;
+                        line-height: 4rem;
+
+                        &::before {
+                            content: url(images/check.svg);
+                            padding-right: 1.6rem;
+                        }
+                    }
+                }
+                margin-bottom: 4.4rem;
+            }
+
+            .button__action {
+                border-radius: 1.2rem;
+                border: 0.1rem solid $color-dark;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 100%;
+                height: 6rem;
+
+                cursor: pointer;
+
+                &--pro {
+                    font-size: 2.4rem;
+                    color: $color-dark;
+                }
+
+                &--business {
+                    font-size: 2.4rem;
+                    background-color: $color-dark;
+                    color: $color-white;
+                }
+            }
+
+            &__business {
+                background-image: url(images/background-business.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}

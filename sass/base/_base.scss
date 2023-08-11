@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 9.4rem;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.header {
+    background-image: url(images/background-hero.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
