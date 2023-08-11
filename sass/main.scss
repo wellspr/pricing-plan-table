@@ -36,7 +36,7 @@ body {
 }
 
 .header {
-    background-image: url(/src/images/background-hero.svg);
+    background-image: url(images/background-hero.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     
@@ -258,7 +258,7 @@ body {
                             line-height: 4rem;
 
                             &::before {
-                                content: url(/src/images/check.svg);
+                                content: url(images/check.svg);
                                 padding-right: 1.6rem;
                             }
                         }
@@ -293,7 +293,7 @@ body {
                 }
 
                 &__business {
-                    background-image: url(/src/images/background-business.svg);
+                    background-image: url(images/background-business.svg);
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
